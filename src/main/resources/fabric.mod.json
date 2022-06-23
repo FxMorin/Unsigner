@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "unsigner",
+  "version": "${version}",
+  "name": "Unsigner",
+  "description": "Unsigns player messages passing through the server to prevent people reporting messages on your server",
+  "authors": [
+    "FX"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/unsigner/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "ca.fxco.unsigner.Unsigner"
+    ]
+  },
+  "mixins": [
+    "unsigner.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "minecraft": ">=1.19.1-beta.1",
+    "java": ">=17"
+  }
+}
